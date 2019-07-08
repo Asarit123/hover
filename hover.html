@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3 boxes hover</title>
+<style>
+	.box3{
+		border: black solid 5px;
+		height: 500px;
+		width: 500px;
+		position: absolute;
+
+	}
+	.box2{
+		border: green solid 5px;
+		height: 300px;
+		width: 300px;
+		position: absolute;
+		margin: 100px 100px 100px 100px;
+	}
+	.box1{
+		border: pink solid 5px;
+		height: 200px;
+		width: 200px;
+		position: absolute;
+		margin: 140px 140px 140px 140px;
+	}
+	.box3:hover
+	{
+		visibility: hidden;
+	}
+.box2:hover
+	{
+		visibility: hidden;
+	}
+	.box2:hover + .box3{
+		visibility: hidden;
+	}
+	.box1:hover{
+		visibility: hidden;
+	}
+
+</style>
+</head>
+<body>
+	<div class="box3">
+	</div>
+	<div class="box2">
+	</div>
+	<div class="box1">
+	</div>
+
+</body>
+</html>
